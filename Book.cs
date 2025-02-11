@@ -2,8 +2,16 @@
 
 public class Book
 {
-    private string book_id;
+    private string bookId;
     private string title;
     private string author;
-    private int available_copies;
+    private int availableCopies;
+
+    public Book(string bookId, string title, string author, int availableCopies)
+    {
+        this.bookId = bookId;
+        this.title = title;
+        this.author = author;
+        this.availableCopies = availableCopies;
+    }
 }
