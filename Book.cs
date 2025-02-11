@@ -20,5 +20,15 @@ public class Book
         get => bookId;
         set => bookId = value;
     }
-    
+    public String Title
+    {
+        get => title;
+        set => title = value;
+    }
+
+    public String Author
+    {
+        get => author;
+        set => author = value;
+    }
 }
