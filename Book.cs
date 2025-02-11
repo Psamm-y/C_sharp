@@ -52,4 +52,11 @@ public class Book
             Console.WriteLine($"Book '{title}' is out of stock");
         }
     }
+
+    public void ReturnBook()
+    {
+        availableCopies++;
+        Console.WriteLine($"Book '{title}' has been returned. Avaiolable copies : {availableCopies}");
+    }
+    
 }
