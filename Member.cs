@@ -32,4 +32,18 @@ public class Member
             Console.WriteLine("Oops.. cannot borrow book");
         }
     }
+
+    public void ReturnBook(Book book)
+    {
+        if (borrowedBook != null)
+        {
+            borrowedBook.ReturnBook();
+            Console.WriteLine($"{name} returned Book '{book.Title}'.");
+            borrowedBook = null;
+        }
+        else
+        {
+            Console.WriteLine($"{name} has no book to return");
+        }
+    }
 }
