@@ -7,6 +7,7 @@ public class Book
     private string author;
     private int availableCopies;
 
+    //Constructor
     public Book(string bookId, string title, string author, int availableCopies)
     {
         this.bookId = bookId;
@@ -15,20 +16,27 @@ public class Book
         this.availableCopies = availableCopies;
     }
 
-    public String BookId
+    //Getters and Setters
+    public string BookId
     {
         get => bookId;
         set => bookId = value;
     }
-    public String Title
+    public string Title
     {
         get => title;
         set => title = value;
     }
 
-    public String Author
+    public string Author
     {
         get => author;
         set => author = value;
+    }
+
+    public int AvailableCopies
+    {
+        get => availableCopies;
+        set => availableCopies = value;
     }
 }
