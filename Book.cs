@@ -58,5 +58,5 @@ public class Book
         availableCopies++;
         Console.WriteLine($"Book '{title}' has been returned. Avaiolable copies : {availableCopies}");
     }
-    
+
 }

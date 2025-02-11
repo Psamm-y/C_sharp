@@ -47,8 +47,5 @@ public class Member
         }
     }
 
-    static void Main(String[] args)
-    {
-        
-    }
+    
 }
