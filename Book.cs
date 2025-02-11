@@ -39,4 +39,17 @@ public class Book
         get => availableCopies;
         set => availableCopies = value;
     }
+
+    public void BorrowBook()
+    {
+        if (availableCopies > 0)
+        {
+            availableCopies--;
+            Console.WriteLine($"Book '{title}' borrowed successfully. Available copies: {availableCopies}");
+        }
+        else
+        {
+            Console.WriteLine($"Book '{title}' is out of stock");
+        }
+    }
 }
