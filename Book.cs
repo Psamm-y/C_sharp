@@ -14,4 +14,11 @@ public class Book
         this.author = author;
         this.availableCopies = availableCopies;
     }
+
+    public String BookId
+    {
+        get => bookId;
+        set => bookId = value;
+    }
+    
 }
