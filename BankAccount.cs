@@ -16,11 +16,11 @@ public class BankAccount
     public void deposit(float amount)
     {
         balance += amount;
-        Console.WriteLine($"Deposited successful. Account balance: {balance}");
+        Console.WriteLine($"Deposited ${amount} successfully. Account balance: ${balance}");
     }
 
-    public void deposit(float balance, String note)
+    public void deposit(float amount, String note)
     {
-        this.balance += balance;
+       balance += amount;
     }
 }
