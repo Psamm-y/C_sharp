@@ -46,6 +46,6 @@ public class BankAccount
     {
         Console.WriteLine($"Account holder name: {accountHoldername}");
         Console.WriteLine($"Account number: {accountNumber}");
-        Console.WriteLine($"Current Balance: {balance}");
+        Console.WriteLine($"Current Balance: {balance} \n");
     }
 }

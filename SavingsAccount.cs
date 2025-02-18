@@ -58,7 +58,7 @@ public class SavingsAccount : BankAccount
         account.Withdraw(100);
         
         //Display account details
-        bAccount.displayAccountDetails();
-        account.displayAccountDetails();
+        bAccount.displayAccountDetails();//for bank Account
+        account.displayAccountDetails();//for savings account
     }
 }
