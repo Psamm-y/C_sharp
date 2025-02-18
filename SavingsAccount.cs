@@ -36,7 +36,7 @@ public class SavingsAccount : BankAccount
     public virtual void displayAccountDetails()
     {
         base.displayAccountDetails();
-        Console.WriteLine($"Interest Rate: {interestRate}");
+        Console.WriteLine($"Interest Rate: {interestRate} \n");
     }
 
     //Implementations
