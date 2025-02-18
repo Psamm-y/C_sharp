@@ -42,6 +42,7 @@ public class SavingsAccount : BankAccount
     //Implementations
     public static void Mains()
     {
+        BankAccount bAccount = new BankAccount("Samuel", "2344-455", 500);
         //Create account
         SavingsAccount account = new SavingsAccount("Alice", 
                 "SA123", 
@@ -52,8 +53,12 @@ public class SavingsAccount : BankAccount
         account.deposit(2250,"Hall fees"); //Deposit 2
         
         //Withdraw method
-        /*account.Withdraw(4000);
-        account.Withdraw(3200);*/
+        account.Withdraw(4000);
+        account.Withdraw(3200);
         account.Withdraw(100);
+        
+        //Display account details
+        bAccount.displayAccountDetails();
+        account.displayAccountDetails();
     }
 }
