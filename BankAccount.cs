@@ -25,7 +25,7 @@ public class BankAccount
 
     public void deposit(float amount, String note)
     {
-       balance += amount;
+       Balance += amount;
        Console.WriteLine($"Deposited ${amount} successfully as {note}. Account balance: ${Balance}");
     }
 
