@@ -30,6 +30,12 @@ public class SavingsAccount : BankAccount
     public void CalculateInterest()
     {
         float interest = balance * interestRate / 100;
-        Console.WriteLine($"Anual Interest: + {interest}");
+        Console.WriteLine($"Annual Interest: + {interest}");
+    }
+    //Override account details method from base class
+    public virtual void displayAccountDetails()
+    {
+        base.displayAccountDetails();
+        Console.WriteLine($"Interest Rate: {interestRate}");
     }
 }

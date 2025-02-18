@@ -38,7 +38,7 @@ public class BankAccount
         }
     }
 
-    public virtual void diplayAccountDetails()
+    public virtual void displayAccountDetails()
     {
         Console.WriteLine($"Account holder name: {accountHoldername}");
         Console.WriteLine($"Account number: {accountNumber}");
