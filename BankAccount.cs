@@ -19,7 +19,7 @@ public class BankAccount
     //overloading deposit method
     public void deposit(float amount)
     {
-        balance += amount;
+        Balance += amount;
         Console.WriteLine($"Deposited ${amount} successfully. Account balance: ${balance}");
     }
 
@@ -31,9 +31,9 @@ public class BankAccount
 
     public void Withdraw(float amount)
     {
-        if (balance >= amount)
+        if (Balance >= amount)
         {
-            balance-= amount;
+            Balance-= amount;
             Console.WriteLine($"Withdrawn ${amount} successfully. Available account balance: ${balance}");
         }
         else
