@@ -20,13 +20,13 @@ public class BankAccount
     public void deposit(float amount)
     {
         Balance += amount;
-        Console.WriteLine($"Deposited ${amount} successfully. Account balance: ${balance}");
+        Console.WriteLine($"Deposited ${amount} successfully. Account balance: ${Balance}");
     }
 
     public void deposit(float amount, String note)
     {
        balance += amount;
-       Console.WriteLine($"Deposited ${amount} successfully as {note}. Account balance: ${balance}");
+       Console.WriteLine($"Deposited ${amount} successfully as {note}. Account balance: ${Balance}");
     }
 
     public void Withdraw(float amount)
@@ -34,7 +34,7 @@ public class BankAccount
         if (Balance >= amount)
         {
             Balance-= amount;
-            Console.WriteLine($"Withdrawn ${amount} successfully. Available account balance: ${balance}");
+            Console.WriteLine($"Withdrawn ${amount} successfully. Available account balance: ${Balance}");
         }
         else
         {
