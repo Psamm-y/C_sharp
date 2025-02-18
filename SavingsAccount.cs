@@ -50,5 +50,10 @@ public class SavingsAccount : BankAccount
         //calling deposit methods on account object
         account.deposit(500); //Deposit 1
         account.deposit(2250,"Hall fees"); //Deposit 2
+        
+        //Withdraw method
+        account.Withdraw(4000);
+        account.Withdraw(3200);
+        account.Withdraw(13.45f);
     }
 }
