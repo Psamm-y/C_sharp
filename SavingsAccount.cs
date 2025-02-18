@@ -5,10 +5,10 @@ public class SavingsAccount : BankAccount
     private float interestRate;
 
     //Constructor with superclass initialized attributes
-    public SavingsAccount(float interestRate,
-                            String accountHoldername,
+    public SavingsAccount(String accountHoldername,
                             String accountNumber, 
-                            float balance)
+                            float balance,
+                            float interestRate)
     : base (accountHoldername, accountNumber, balance)
     {
         this.interestRate = interestRate;
@@ -42,6 +42,6 @@ public class SavingsAccount : BankAccount
     //Implementations
     public static void Program(string[] args)
     {
-        
+        SavingsAccount account = new SavingsAccount("Alice", "SA123", 500, 0.03f);
     }
 }
