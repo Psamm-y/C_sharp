@@ -13,4 +13,17 @@ public class SavingsAccount : BankAccount
     {
         this.interestRate = interestRate;
     }
+
+    public void Withdraw(float amount)
+    {
+        if (balance >= amount)
+        {
+            balance-= amount;
+            Console.WriteLine($"Withdrawn ${amount} successfully. Available account balance: ${balance}");
+        }
+        else
+        {
+            Console.WriteLine("Insufficient balance");
+        }
+    }
 }
