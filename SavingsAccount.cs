@@ -14,6 +14,7 @@ public class SavingsAccount : BankAccount
         this.interestRate = interestRate;
     }
 
+    //Override withdraw method from base class
     public void Withdraw(float amount)
     {
         if (balance-amount< 100)
@@ -24,5 +25,11 @@ public class SavingsAccount : BankAccount
         {
             base.Withdraw(amount);
         }
+    }
+
+    public void CalculateInterest()
+    {
+        float interest = balance * interestRate / 100;
+        Console.WriteLine($"Anual Interest: + {interest}");
     }
 }
