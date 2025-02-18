@@ -52,8 +52,8 @@ public class SavingsAccount : BankAccount
         account.deposit(2250,"Hall fees"); //Deposit 2
         
         //Withdraw method
-        account.Withdraw(4000);
-        account.Withdraw(3200);
-        account.Withdraw(13.45f);
+        /*account.Withdraw(4000);
+        account.Withdraw(3200);*/
+        account.Withdraw(13);
     }
 }
