@@ -16,14 +16,13 @@ public class SavingsAccount : BankAccount
 
     public void Withdraw(float amount)
     {
-        if (balance >= amount)
+        if (balance-amount< 100)
         {
-            balance-= amount;
-            Console.WriteLine($"Withdrawn ${amount} successfully. Available account balance: ${balance}");
+            Console.WriteLine("Withdrawal declined.");
         }
         else
         {
-            Console.WriteLine("Insufficient balance");
+            base.Withdraw(amount);
         }
     }
 }
