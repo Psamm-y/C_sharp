@@ -38,4 +38,10 @@ public class SavingsAccount : BankAccount
         base.displayAccountDetails();
         Console.WriteLine($"Interest Rate: {interestRate}");
     }
+
+    //Implementations
+    public static void Program(string[] args)
+    {
+        
+    }
 }
