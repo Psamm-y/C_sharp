@@ -37,4 +37,11 @@ public class BankAccount
             Console.WriteLine("Insufficient balance");
         }
     }
+
+    public virtual void diplayAccountDetails()
+    {
+        Console.WriteLine($"Account holder name: {accountHoldername}");
+        Console.WriteLine($"Account number: {accountNumber}");
+        Console.WriteLine($"Current Balance: {balance}");
+    }
 }
