@@ -43,6 +43,12 @@ public class SavingsAccount : BankAccount
     public static void Mains()
     {
         //Create account
-        SavingsAccount account = new SavingsAccount("Alice", "SA123", 500, 0.03f);
+        SavingsAccount account = new SavingsAccount("Alice", 
+                "SA123", 
+                    500,
+                0.03f);
+        //calling deposit methods on account object
+        account.deposit(500); //Deposit 1
+        account.deposit(2250,"Hall fees"); //Deposit 2
     }
 }

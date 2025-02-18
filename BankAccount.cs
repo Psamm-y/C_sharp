@@ -16,6 +16,7 @@ public class BankAccount
         this.balance = balance;
     }
 
+    //overloading deposit method
     public void deposit(float amount)
     {
         balance += amount;
