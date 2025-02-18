@@ -2,9 +2,9 @@
 
 public class BankAccount
 {
-    private String accountHoldername;
-    private String accountNumber;
-    private float balance;
+    protected String accountHoldername;
+    protected String accountNumber;
+    protected float balance;
 
     public BankAccount(String accountHoldername, String accountNumber, float balance)
     {
@@ -22,5 +22,14 @@ public class BankAccount
     public void deposit(float amount, String note)
     {
        balance += amount;
+       Console.WriteLine($"Deposited ${amount} successfully as {note}. Account balance: ${balance}");
+    }
+
+    public void Withdraw(float amount)
+    {
+        if (balance >= amount)
+        {
+            balance-= amount;
+        }
     }
 }
