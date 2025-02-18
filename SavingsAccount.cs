@@ -54,6 +54,6 @@ public class SavingsAccount : BankAccount
         //Withdraw method
         /*account.Withdraw(4000);
         account.Withdraw(3200);*/
-        account.Withdraw(13);
+        account.Withdraw(100);
     }
 }
