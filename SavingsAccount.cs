@@ -17,7 +17,7 @@ public class SavingsAccount : BankAccount
     //Override withdraw method from base class
     public void Withdraw(float amount)
     {
-        if (balance-amount< 100)
+        if (Balance-amount< 100)
         {
             Console.WriteLine("Withdrawal declined.");
         }
@@ -29,7 +29,7 @@ public class SavingsAccount : BankAccount
 
     public void CalculateInterest()
     {
-        float interest = balance * interestRate / 100;
+        float interest = Balance * interestRate / 100;
         Console.WriteLine($"Annual Interest: + {interest}");
     }
     //Override account details method from base class
@@ -40,8 +40,9 @@ public class SavingsAccount : BankAccount
     }
 
     //Implementations
-    public static void Program(string[] args)
+    public static void Mains()
     {
+        //Create account
         SavingsAccount account = new SavingsAccount("Alice", "SA123", 500, 0.03f);
     }
 }

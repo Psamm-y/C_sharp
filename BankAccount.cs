@@ -2,10 +2,13 @@
 
 public class BankAccount
 {
-    protected String accountHoldername;
-    protected String accountNumber;
-    protected float balance;
+    private String accountHoldername;
+    private String accountNumber;
+    private float balance;
 
+    public String AccountHolderName { get; set; }
+    public String AccountNumber { get; set; }
+    public float Balance { get; set; }
     public BankAccount(String accountHoldername, String accountNumber, float balance)
     {
         this.accountHoldername = accountHoldername;
